@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="411dp"
+        android:layout_height="171dp"
+        android:src="@drawable/logo1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/logo1" />
+
+    <ImageView
+        android:id="@+id/border"
+        android:layout_width="415dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="164dp"
+        android:src="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Guideline for horizontal center -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        />
+
+    <!-- Guideline for vertical center -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        />
+
+    <!-- Buttons -->
+
+    <Button
+        android:id="@+id/ReceiveInventoryButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/hellenikaBlue"
+        android:text="Receive Inventory"
+        android:onClick="onReceiveInventoryClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/ViewInventoryButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/hellenikaBlue"
+        android:text="View Inventory"
+        android:onClick="onViewInventoryClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.950"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <Button
+        android:id="@+id/CreateBatchButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/hellenikaBlue"
+        android:text="Create Batch"
+        android:onClick="onCreateBatchClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.60" />
+
+    <Button
+        android:id="@+id/ViewBatchButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/hellenikaBlue"
+        android:text="View Batch"
+        android:onClick="onViewBatchesCLick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.950"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.60" />
+
+    <Button
+        android:id="@+id/NewRecipeButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/hellenikaBlue"
+        android:text="New Recipes"
+        android:onClick="onNewRecipesClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <Button
+        android:id="@+id/ViewRecipeButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/hellenikaBlue"
+        android:text="View Recipes"
+        android:onClick="onViewRecipesClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.950"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <Button
+        android:id="@+id/SuppliersButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/hellenikaBlue"
+        android:text="Suppliers"
+        android:onClick="onSupplierClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.650"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90" />
+
+    <Button
+        android:id="@+id/ReportsButton"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:backgroundTint="@color/hellenikaBlue"
+        android:text="Reports"
+        android:onClick="onReportsClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.950"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.90" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
